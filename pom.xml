@@ -14,6 +14,9 @@
         <javac.src.version>1.7</javac.src.version>
         <javac.target.version>1.7</javac.target.version>
         <junit.version>4.11</junit.version>
+        <sonar.projectKey>sonrai-bradpe_javatest</sonar.projectKey>
+  <sonar.organization>sonrai-bradpe</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
