@@ -16,9 +16,9 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: PMD
-      run: mvn pmd:pmd
+      run: mvn -B pmd:pmd
     - name: Analyze on SonarCloud
-      run: mvn verify sonar:sonar
+      run: mvn -B verify sonar:sonar
       env: # Or as an environment variable
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.githubToken }}
