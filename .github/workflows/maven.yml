@@ -14,11 +14,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
-    - name: PMD
-      run: mvn -B pmd:pmd
-    - name: Analyze on SonarCloud
-      run: mvn -B verify sonar:sonar
+      run: mvn -B package --file pom.xml && mvn -B pmd:pmd && mvn -B verify sonar:sonar
       env: # Or as an environment variable
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.githubToken }}
