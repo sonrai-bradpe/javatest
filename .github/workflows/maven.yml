@@ -19,3 +19,4 @@ jobs:
       run: mvn verify sonar:sonar
       env: # Or as an environment variable
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.githubToken }}
