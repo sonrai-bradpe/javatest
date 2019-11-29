@@ -25,7 +25,7 @@ public class SimpleOrchestratorTest {
 
 
 
-        System.out.println("This is a test");
+
         TradeEvent te = new TradeEvent("trade1", 1000.0);
         orchestrator.receive(te);
         safeSleep(100);
