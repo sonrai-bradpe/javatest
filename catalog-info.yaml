@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: javatest
+  annotations:
+    github.com/project-slug: sonrai-bradpe/javatest
+spec:
+  type: other
+  lifecycle: unknown
+  owner: brad
