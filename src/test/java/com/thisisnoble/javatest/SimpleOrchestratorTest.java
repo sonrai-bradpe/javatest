@@ -22,6 +22,10 @@ public class SimpleOrchestratorTest {
         Orchestrator orchestrator = setupOrchestrator();
         orchestrator.setup(testPublisher);
 
+
+
+
+
         TradeEvent te = new TradeEvent("trade1", 1000.0);
         orchestrator.receive(te);
         safeSleep(100);
